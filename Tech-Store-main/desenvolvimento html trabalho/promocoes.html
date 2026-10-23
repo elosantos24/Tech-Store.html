@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Promoções</title>
+
+    <link rel="stylesheet" href="promocoes.css">
+</head>
+
+
+
+
+<body>
+
+    
+
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="cabecalho">
+
+        <a href="home.html" class="voltar">
+            ← Voltar
+        </a>
+
+        <h1>🔥 SEU PRÓXIMO UPGRADE ESTÁ AQUI</h1>
+
+        <p>PCs, notebooks, monitores e acessórios com descontos de até 50% OFF.</p>
+
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu">
+
+        <a href="home.html">Início</a>
+        <a href="sobre_nos.html">Sobre nós</a>
+        <a href="celulares.html">Celulares</a>
+        <a href="computadores.html">Computadores</a>
+        <a href="acessorios.html">Acessórios</a>
+        <a href="games.html">Games</a>
+        <a href="promocoes.html" class="active">Promoções</a>
+        <a href="minha_conta.html">👤 Minha conta</a>
+        <a href="carrinho.html">🛒 Carrinho <span id="cartCount" class="cart-badge">0</span></a>
+
+    </nav>
+
+
+    <!-- =========================
+         FILTROS
+    ========================== -->
+
+    <section class="filtros">
+
+        <h2>Filtrar por desconto</h2>
+
+        <div class="botoes-filtro">
+
+            <button class="filtro ativo" data-filtro="todos">
+                Todas
+            </button>
+
+            <button class="filtro" data-filtro="10">
+                10% OFF
+            </button>
+
+            <button class="filtro" data-filtro="25">
+                25% OFF
+            </button>
+
+            <button class="filtro" data-filtro="50">
+                50% OFF
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUTOS
+    ========================== -->
+
+    <main class="produtos">
+
+
+        <!-- =================================================
+             PRODUTOS 10% OFF
+        ================================================== -->
+
+
+        <!-- PRODUTO 1 -  -->
+
+        <div class="produto" data-desconto="10">
+
+            <div class="porcentagem">
+                -10%
+            </div>
+
+            <div class="imagem-produto">
+                <img src="imgs/promocoes/MacBook.webp" alt="MacBook Pro Apple 16&quot;" loading="lazy">
+            </div>
+
+            <h3>
+                MacBook Pro Apple 16", M4 Pro, CPU 14 Núcleos, GPU 20 Núcleos, Neural Engine de 16 Núcleos, 24GB RAM, SSD 512GB, Preto-espacial - MX2X3BZ/A
+            </h3>
+
+            <p class="preco-antigo">
+                R$ 31.578,94
+            </p>
+
+            <p class="preco">
+                R$ 28.421,05
+            </p>
+
+            <button class="comprar">
+                Comprar
+            </button>
+
+        </div>
+
+
+        <!-- PRODUTO 3 - MONITOR -->
+
+        <div class="produto" data-desconto="10">
+
+            <div class="porcentagem">
+                -10%
+            </div>
+
+            <div class="imagem-produto">
+               <img src="imgs/promocoes/Monitor Touch Screen.png" alt="Monitor Touch Screen Resistivo 23.6″ Full Hd – Lynx Essence" loading="lazy">
+            </div>
+
+            <h3>
+                Monitor Touch Screen Resistivo 23.6″ Full Hd – Lynx Essence
+            </h3>
+
+            <p class="preco-antigo">
+                R$ 2.599,90
+            </p>
+
+            <p class="preco">
+                R$ 2.339,91
+            </p>
+
+            <button class="comprar">
+                Comprar
+            </button>
+
+        </div>
+        
+        <!-- PRODUTO 5 - MONITOR -->
+
+        <div class="produto" data-desconto="10">
+
+            <div class="porcentagem">
+                -10%
+            </div>
+
+            <div class="imagem-produto">
+                <img src="imgs/promocoes/Monitor Gamer AOC .png" alt="Monitor Gamer AOC Agon 27&quot;" loading="lazy">
+            </div>
+
+            <h3>
+                Monitor Gamer AOC Agon 27", FHD, 144Hz, 0.5ms, IPS, G-Sync, HDR, Preto - 27G50F
+            </h3>
+
+            <p class="preco-antigo">
+                R$ 1.052,53
+            </p>
+
+            <p class="preco">
+                R$ 947,28
+            </p>
+
+            <button class="comprar">
+                Comprar
+            </button>
+
+        </div>
+        
+        <!-- =================================================
+             PRODUTOS 25% OFF
+        ================================================== -->
+
+
+        <!-- PRODUTO 3 - PS5 -->
+
+        <div class="produto" data-desconto="25">
+
+            <div class="porcentagem">
+                -25%
+            </div>
+
+            <div class="imagem-produto">
+                <img src="imgs/promocoes/Console PlayStation 5 .png" alt="Console PlayStation 5 Digital Sony Bundle Astro Bot e Gran Turismo 7 825GB Branco" loading="lazy">
+            </div>
+
+            <h3>
+                Console PlayStation 5 Digital Sony Bundle Astro Bot e Gran Turismo 7 825GB Branco
+            </h3>
+
+            <p class="preco-antigo">
+                R$ 4.599,99
+            </p>
+
+            <p class="preco">
+                R$ 3.449,99
+            </p>
+
+            <button class="comprar">
+                Comprar
+            </button>
+
+        </div>
+
+
+        <!-- PRODUTO 4 - TABLET -->
+
+        <div class="produto" data-desconto="25">
+
+            <div class="porcentagem">
+                -25%
+            </div>
+
+            <div class="imagem-produto">
+                <img src="imgs/promocoes/Tablet.png" alt="Tablet Samsung Galaxy Tab A11+ 5G 128GB Grafite" loading="lazy">
+            </div>
+
+            <h3>
+                Tablet Samsung Galaxy Tab A11+ 5G 128GB Grafite - SM-X236BZAAZTO
+            </h3>
+
+            <p class="preco-antigo">
+                R$ 2.430,69
+            </p>
+
+            <p class="preco">
+                R$ 1.823,02
+            </p>
+
+            <button class="comprar">
+                Comprar
+            </button>
+
+        </div>
+
+
+        <!-- PRODUTO 5 - FONE -->
+
+        <div class="produto" data-desconto="25">
+
+            <div class="porcentagem">
+                -25%
+            </div>
+
+            <div class="imagem-produto">
+                <img src="imgs/promocoes/fone de ouvido.png" alt="Fone De Ouvido Sony Bluetooth WH-1000XM5 Over-ear" loading="lazy">
+            </div>
+
+            <h3>
+                Fone De Ouvido Sony Bluetooth WH-1000XM5 Over-ear, Cancelamento De Ruído, Preto - WH-1000XM5/B
+            </h3>
+
+            <p class="preco-antigo">
+                R$ 2.519,99
+            </p>
+
+            <p class="preco">
+                R$ 1.889,99
+            </p>
+
+            <button class="comprar">
+                Comprar
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRODUTOS 50% OFF
+        ================================================== -->
+
+
+        <!-- PRODUTO 9 - MOUSEPAD 2 -->
+
+        <div class="produto" data-desconto="50">
+
+            <div class="porcentagem">
+                -50%
+            </div>
+
+            <div class="imagem-produto">
+                <img src="imgs/promocoes/Mouse Pad.png" alt="Mouse Pad Gamer 90x30cm GMP-02 90011-01 X-zone CX" loading="lazy">
+            </div>
+
+            <h3>
+                Mouse Pad Gamer 90x30cm GMP-02 90011-01 X-zone CX
+            </h3>
+
+            <p class="preco-antigo">
+                R$ 99,00
+            </p>
+
+            <p class="preco">
+                R$ 49,50
+            </p>
+
+            <button class="comprar">
+                Comprar
+            </button>
+
+        </div>
+
+
+        <!-- PRODUTO 10 - MOUSE -->
+
+        <div class="produto" data-desconto="50">
+
+            <div class="porcentagem">
+                -50%
+            </div>
+
+            <div class="imagem-produto">
+                <img src="imgs/promocoes/Mouse.png" alt="Mouse Sem Fio 2.4GHz com DPI Ajustável e Conexão USB" loading="lazy">
+            </div>
+
+            <h3>
+                Mouse Sem Fio 2.4GHz com DPI Ajustável e Conexão USB - Preto - AOC
+            </h3>
+
+            <p class="preco-antigo">
+                R$ 79,99
+            </p>
+
+            <p class="preco">
+                R$ 39,99
+            </p>
+
+            <button class="comprar">
+                Comprar
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =========================
+         AVISO
+    ========================== -->
+
+    <div id="aviso" class="aviso" role="status" aria-live="polite">
+        Filtro selecionado!
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="carrinho.js"></script>
+    <script>
+
+        // =========================
+        // FILTROS
+        // =========================
+
+        const botoesFiltro =
+            document.querySelectorAll(".filtro");
+
+        const produtos =
+            document.querySelectorAll(".produto");
+
+        const aviso =
+            document.getElementById("aviso");
+
+
+        botoesFiltro.forEach(botao => {
+
+            botao.addEventListener("click", () => {
+
+                // Remove seleção dos outros botões
+                botoesFiltro.forEach(b => {
+                    b.classList.remove("ativo");
+                });
+
+                // Seleciona o botão clicado
+                botao.classList.add("ativo");
+
+                // Descobre o filtro
+                const filtro =
+                    botao.dataset.filtro;
+
+
+                // Filtra os produtos
+                produtos.forEach(produto => {
+
+                    const desconto =
+                        produto.dataset.desconto;
+
+
+                    if (
+                        filtro === "todos" ||
+                        desconto === filtro
+                    ) {
+
+                        produto.style.display = "";
+
+                    } else {
+
+                        produto.style.display = "none";
+
+                    }
+
+                });
+
+
+                // Mensagem
+                if (filtro === "todos") {
+
+                    aviso.textContent =
+                        "Mostrando todas as promoções!";
+
+                } else {
+
+                    aviso.textContent =
+                        `Filtro de ${filtro}% OFF selecionado!`;
+
+                }
+
+
+                aviso.classList.add("mostrar");
+
+
+                // Remove mensagem depois de 2 segundos
+                setTimeout(() => {
+
+                    aviso.classList.remove("mostrar");
+
+                }, 2000);
+
+            });
+
+        });
+
+
+        // Os botões "Comprar" são tratados por carrinho.js
+
+    </script>
+
+</body>
+
+</html>

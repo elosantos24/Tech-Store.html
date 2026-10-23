@@ -1,0 +1,721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f7;
+    color: #222;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.header {
+    background-color: #ffffff;
+
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 0 6%;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+/* LOGO */
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+
+    color: #111;
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #4f46e5;
+}
+
+
+/* PESQUISA */
+
+.search {
+    flex: 1;
+
+    max-width: 600px;
+
+    display: flex;
+
+    background-color: #f3f3f5;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.search input {
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    background: transparent;
+
+    padding: 14px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.search button {
+    border: none;
+
+    background: transparent;
+
+    padding: 0 18px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+/* AÇÕES */
+
+.header-actions {
+    display: flex;
+
+    gap: 20px;
+}
+
+.header-actions a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 14px;
+}
+
+.header-actions a:hover {
+    color: #4f46e5;
+}
+
+.cart {
+    position: relative;
+}
+
+#cartCount {
+    background-color: #4f46e5;
+
+    color: white;
+
+    border-radius: 50%;
+
+    padding: 2px 6px;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    background-color: #111827;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #a5b4fc;
+}
+
+
+/* =========================
+   BANNER SOBRE NÓS
+========================= */
+
+.about-banner {
+    min-height: 430px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #111827,
+            #312e81
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 50px 10%;
+
+    color: white;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+.banner-small {
+    color: #a5b4fc;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+.banner-content h1 {
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.banner-content p:not(.banner-small) {
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+
+    color: #e5e7eb;
+}
+
+.banner-button {
+    display: inline-block;
+
+    background-color: #6366f1;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.banner-button:hover {
+    background-color: #818cf8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.about-section,
+.values-section,
+.differentials-section {
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    padding: 0 20px;
+}
+
+.section-label {
+    color: #4f46e5;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+}
+
+.section-heading h2,
+.about-text h2 {
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+    color: #111827;
+}
+
+.section-heading > p:not(.section-label) {
+    color: #6b7280;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   QUEM SOMOS
+========================= */
+
+.about-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.about-text p:not(.section-label) {
+    color: #6b7280;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* IMAGEM SOBRE NÓS */
+
+.about-image {
+    height: 350px;
+
+    background-color: #e5e7eb;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   MISSÃO, VISÃO E VALORES
+========================= */
+
+.values-section {
+    max-width: none;
+
+    background-color: #ffffff;
+
+    padding: 60px max(20px, calc((100% - 1160px) / 2));
+
+    margin: 60px 0;
+}
+
+.values-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.value-card {
+    background-color: #f5f5f7;
+
+    border: 1px solid #eee;
+
+    border-radius: 12px;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.08);
+}
+
+.value-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.value-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+    color: #111827;
+}
+
+.value-card p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   DIFERENCIAIS
+========================= */
+
+.differentials-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.differential {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #eee;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+.differential:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.06);
+}
+
+.differential > span {
+    font-size: 32px;
+}
+
+.differential h3 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+
+    color: #111827;
+}
+
+.differential p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CHAMADA FINAL
+========================= */
+
+.about-cta {
+    background:
+        linear-gradient(
+            90deg,
+            #111827,
+            #312e81
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.about-cta h2 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    color: #d1d5db;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+
+    background-color: #6366f1;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #818cf8;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    padding: 50px 8% 20px;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 40px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    color: #d1d5db;
+
+    line-height: 1.6;
+}
+
+.copyright {
+    text-align: center;
+
+    color: #9ca3af;
+
+    margin-top: 40px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #374151;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        gap: 15px;
+    }
+
+    .header-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .about-section {
+        gap: 30px;
+    }
+
+    .values-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .differentials-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+    }
+
+    .search {
+        width: 100%;
+
+        flex: auto;
+    }
+
+    .menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .about-banner {
+        min-height: 380px;
+
+        padding: 50px 25px;
+    }
+
+    .banner-content h1 {
+        font-size: 36px;
+    }
+
+    .banner-content p:not(.banner-small) {
+        font-size: 16px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+
+        margin: 40px auto;
+
+        gap: 25px;
+    }
+
+    .about-text h2,
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .about-image {
+        height: 250px;
+    }
+
+    .values-section {
+        padding: 45px 20px;
+    }
+
+    .values-container {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        padding: 25px 20px;
+    }
+
+    .differentials-section {
+        margin: 45px auto;
+    }
+
+    .differential {
+        padding: 20px;
+    }
+
+    .about-cta {
+        padding: 45px 20px;
+    }
+
+    .about-cta h2 {
+        font-size: 26px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   CORREÇÕES
+========================= */
+
+.menu {
+    flex-wrap: wrap;
+}
+
+.header-actions a {
+    text-decoration: none;
+}

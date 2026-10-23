@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TechStore</title>
+    <link rel="stylesheet" href="Loja.css">
+</head>
+<body>
+
+    <main class="login-container">
+        <div class="login-box">
+
+            <h1>Bem-vindo!</h1>
+            <p class="subtitle">Entre na sua conta</p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha</label>
+
+                    <div class="password-container">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                            aria-label="Mostrar ou ocultar senha"
+                        >
+                            Mostrar
+                        </button>
+                    </div>
+                </div>
+
+               
+
+                <button type="submit" class="login-button">
+                    Entrar
+                </button>
+
+                <p class="register"><a href="home.html">← Voltar para a loja</a></p>
+
+                <p id="message" role="alert"></p>
+
+            </form>
+
+           
+        </div>
+    </main>
+
+    <script src="Loja.js"></script>
+</body>
+</html>

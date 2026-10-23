@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore - Eletrônicos</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="logo"><a href="home.html">Tech<span>Store</span></a></div>
+
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="O que você está procurando?"
+            >
+
+            <button type="button" id="searchButton" aria-label="Buscar">
+                🔍
+            </button>
+        </div>
+
+      <div class="header-actions">
+
+            <a href="minha_conta.html">
+                👤 Minha conta
+            </a>
+
+            <a href="carrinho.html" class="cart">
+                🛒 Carrinho
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+    </header>
+
+
+ <!-- MENU -->
+    <nav class="menu">
+
+        <a href="home.html" class="active">Início</a>
+        <a href="sobre_nos.html">Sobre nós</a>
+        <a href="celulares.html">Celulares</a>
+        <a href="computadores.html">Computadores</a>
+        <a href="acessorios.html">Acessórios</a>
+        <a href="games.html">Games</a>
+        <a href="promocoes.html">Promoções</a>
+
+    </nav>
+
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="banner">
+
+        <div class="banner-content">
+
+            <p class="banner-small">
+                TECNOLOGIA PARA VOCÊ
+            </p>
+
+            <h1>
+                Tecnologia que<br>
+                combina com você.
+            </h1>
+
+            <p>
+                Encontre smartphones, notebooks,
+                acessórios e muito mais.
+            </p>
+
+            <a href="promocoes.html" class="banner-button">
+                Ver ofertas
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIAS -->
+    <section class="section">
+
+        <h2>Categorias</h2>
+
+        <div class="categories">
+
+            <a class="category" href="celulares.html">
+                📱
+                <h3>Celulares</h3>
+            </a>
+
+            <a class="category" href="computadores.html">
+                💻
+                <h3>Notebooks</h3>
+            </a>
+
+            <a class="category" href="acessorios.html">
+                🎧
+                <h3>Áudio</h3>
+            </a>
+
+            <a class="category" href="games.html">
+                🎮
+                <h3>Games</h3>
+            </a>
+
+            <a class="category" href="acessorios.html">
+                ⌨️
+                <h3>Acessórios</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUTOS -->
+    <section class="section">
+
+        <div class="section-title">
+            <h2>Produtos em destaque</h2>
+        </div>
+
+
+        <div class="products">
+
+            <!-- PRODUTO 1 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="imgs/home_imgs/Iphone 17.png" alt="iPhone 17 Pro Apple 256GB Laranja-cósmico">
+                    
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Smartphone
+                    </p>
+
+                    <h3>
+                        iPhone 17 Pro Apple 256GB, Câmera Tripla Fusion de 48MP, Tela 6.3" Super Retina XDR, Laranja-cósmico
+                    </h3>
+
+                    <p class="description">
+                        256GB • 8GB RAM
+                    </p>
+
+                    <p class="price">
+                        R$ 2.499,90
+                    </p>
+
+                    <button
+                        class="buy-button"
+                        data-product="iPhone 17 Pro Apple 256GB"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 2 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="imgs/home_imgs/notebook.png" alt="Notebook Acer Aspire Go 15">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Notebook
+                    </p>
+
+                    <h3>
+                        Notebook Acer Aspire Go 15 Ag15-71pt-72el Intel® Core™ i7-13620h 16gb Ram 512gb SSD De 13ªg 15.6” Touchscreen
+                    </h3>
+
+                    <p class="description">
+                        16GB RAM • SSD 13ªg
+                    </p>
+
+                    <p class="price">
+                        R$ 3.799,90
+                    </p>
+
+                    <button
+                        class="buy-button"
+                        data-product="Notebook Acer Aspire Go 15"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 3 -->
+            <div class="product">
+
+                <div class="product-image">
+                     <img src="imgs/home_imgs/headphone.png" alt="Fone de ouvido Bluetooth JBL Tune 730BT">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Áudio
+                    </p>
+
+                    <h3>
+                        Fone De Ouvido Bluetooth JBL Tune 730BT Headphones Over-ear Branco Bivolt  
+                    </h3>
+
+                    <p class="description">
+                        Bluetooth • Cancelamento de ruído
+                    </p>
+
+                    <p class="price">
+                        R$ 399,90
+                    </p>
+
+                    <button
+                        class="buy-button"
+                        data-product="Fone JBL Tune 730BT"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUTO 4 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="imgs/home_imgs/ccontrole.png" alt="Controle Sony DualSense PlayStation 5">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Games
+                    </p>
+
+                    <h3>
+                        Controle Sony DualSense PlayStation 5, Sem Fio, Galactic Purple - PS5
+                    </h3>
+
+                    <p class="description">
+                        Compatível com PC e console
+                    </p>
+
+                    <p class="price">
+                        R$ 299,90
+                    </p>
+
+                    <button
+                        class="buy-button"
+                        data-product="Controle DualSense PS5"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>TechStore</h3>
+
+                <p>
+                    Tecnologia para facilitar
+                    o seu dia a dia.
+                </p>
+            </div>
+
+            <div>
+                <h3>Atendimento</h3>
+
+                <p>
+                    Segunda a sexta<br>
+                    08:00 às 18:00
+                </p>
+            </div>
+
+            <div>
+                <h3>Contato</h3>
+
+                <p>
+                    contato@techstore.com
+                </p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 TechStore. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="carrinho.js"></script>
+    <script src="home.js"></script>
+
+</body>
+
+</html>

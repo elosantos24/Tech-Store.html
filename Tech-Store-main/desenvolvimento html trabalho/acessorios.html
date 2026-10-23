@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Acessórios</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="logo"><a href="home.html">Tech<span>Store</span></a></div>
+
+        <div class="search">
+            <input type="text" id="searchInput"
+                placeholder="O que você está procurando?">
+            <button type="button" id="searchButton" aria-label="Buscar">🔍</button>
+        </div>
+
+        <div class="header-actions">
+            <a href="minha_conta.html">👤 Minha conta</a>
+            <a href="carrinho.html" class="cart">
+                🛒 Carrinho
+                <span id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <a href="home.html">Início</a>
+        <a href="sobre_nos.html">Sobre nós</a>
+        <a href="celulares.html">Celulares</a>
+        <a href="computadores.html">Computadores</a>
+        <a href="acessorios.html" class="active">Acessórios</a>
+        <a href="games.html">Games</a>
+        <a href="promocoes.html">Promoções</a>
+    </nav>
+
+     <!-- APRESENTAÇÃO -->
+        <section class="banner">
+            <div class="banner-content">
+                <span class="banner-small">TECHSTORE</span>
+
+                <h1>Acessórios que facilitam o seu dia</h1>
+
+                <p>
+                    Explore nossas marcas, descubra novidades e
+                    encontre a tecnologia perfeita para o seu dia a dia.
+                </p>
+            </div>
+        </section>
+
+    <!-- PRODUTOS -->
+    <section class="section">
+        <h2>Acessórios de Tecnologia</h2>
+        <p>Complete seus equipamentos com acessórios para o dia a dia.</p>
+
+        <div class="products">
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="imgs/acessorios/headphone.png"
+                         width="300" height="200"
+                         alt="Fone de ouvido Bluetooth">
+                </div>
+
+                <div class="product-info">
+                    <p class="category-name">Áudio</p>
+                    <h3>Fone de Ouvido Bluetooth JBL</h3>
+                    <p class="description">Bluetooth • Sem fio</p>
+                    <p class="price">R$ 399,90</p>
+                    <button class="buy-button"
+                            data-product="Fone de Ouvido Bluetooth JBL">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="imgs/acessorios/ccontrole.png"
+                         width="300" height="200"
+                         alt="Controle sem fio">
+                </div>
+
+                <div class="product-info">
+                    <p class="category-name">Acessórios</p>
+                    <h3>Controle Sem Fio</h3>
+                    <p class="description">Conexão sem fio</p>
+                    <p class="price">R$ 299,90</p>
+                    <button class="buy-button"
+                            data-product="Controle Sem Fio">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="imgs/acessorios/alexa.png"
+                         width="300" height="200"
+                         alt="Echo Dot 5ª geração com Alexa">
+                </div>
+
+                <div class="product-info">
+                    <p class="category-name">Casa inteligente</p>
+                    <h3>Echo Dot 5ª geração Amazon, com Alexa, Smart Speaker, Preto - B09B8VGCR8</h3>
+                    <p class="description">Smart speaker • Alexa • Controle por voz</p>
+                    <p class="price">R$ 149,90</p>
+                    <button class="buy-button"
+                            data-product="Echo Dot 5ª geração Amazon">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>TechStore</h3>
+                <p>Tecnologia para facilitar o seu dia a dia.</p>
+            </div>
+
+            <div>
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta<br>08:00 às 18:00</p>
+            </div>
+
+            <div>
+                <h3>Contato</h3>
+                <p>contato@techstore.com</p>
+            </div>
+        </div>
+
+        <p class="copyright">
+            © 2026 TechStore. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="carrinho.js"></script>
+    <script src="home.js"></script>
+
+</body>
+</html>

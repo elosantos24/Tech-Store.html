@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Celulares | TechStore</title>
+
+        <link rel="stylesheet" href="celulares.css">
+    </head>
+
+    <body>
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+
+            <a href="home.html" class="logo">
+                Tech<span>Store</span>
+            </a>
+
+            <form class="barra-busca" id="formBusca">
+                <input
+                    type="search"
+                    id="busca"
+                    placeholder="O que você está procurando?"
+                    aria-label="Buscar celulares"
+                >
+                <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
+
+            <div class="acoes">
+                <a href="minha_conta.html">👤 Minha conta</a>
+                <a href="carrinho.html">🛒 Carrinho <span id="contador">0</span></a>
+            </div>
+
+        </header>
+
+        <!-- MENU PRINCIPAL -->
+        <nav class="menu">
+            <a href="home.html">Início</a>
+            <a href="sobre_nos.html">Sobre nós</a>
+            <a href="celulares.html" class="active">Celulares</a>
+            <a href="computadores.html">Computadores</a>
+            <a href="acessorios.html">Acessórios</a>
+            <a href="games.html">Games</a>
+            <a href="promocoes.html">Promoções</a>
+        </nav>
+
+        <main>
+
+            <!-- APRESENTAÇÃO -->
+            <section class="banner">
+                <div class="banner-conteudo">
+                    <span class="etiqueta-banner">TECHSTORE</span>
+
+                    <h1>Encontre o celular ideal para você.</h1>
+
+                    <p>
+                        Explore nossas marcas, descubra novidades e
+                        encontre a tecnologia perfeita para o seu dia a dia.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CATÁLOGO -->
+            <section class="catalogo">
+
+                <div class="titulo-pagina">
+                    <div>
+                        <span class="texto-destaque">NOSSA LOJA</span>
+                        <h2>Celulares</h2>
+                        <p>Confira os smartphones disponíveis.</p>
+                    </div>
+
+                    <select id="ordenacao" aria-label="Ordenar celulares">
+                        <option value="padrao">Mais relevantes</option>
+                        <option value="menor">Menor preço</option>
+                        <option value="maior">Maior preço</option>
+                        <option value="nome">Nome: A–Z</option>
+                    </select>
+                </div>
+
+                <!-- ABAS DE MARCAS -->
+                <div class="filtro-marcas">
+                    <h3>Explore por marca</h3>
+
+                    <div class="abas" role="group" aria-label="Filtrar por marca">
+
+                        <button class="aba ativa" data-marca="todas">
+                            Todas
+                        </button>
+
+                        <button class="aba" data-marca="motorola">
+                            Motorola
+                        </button>
+
+                        <button class="aba" data-marca="apple">
+                            Apple
+                        </button>
+
+                        <button class="aba" data-marca="xiaomi">
+                            Xiaomi
+                        </button>
+
+                        <button class="aba" data-marca="samsung">
+                            Samsung
+                        </button>
+
+                        <button class="aba" data-marca="huawei">
+                            Huawei
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- RESULTADOS -->
+                <div class="resultado">
+                    <p id="quantidade">Todos os celulares</p>
+                </div>
+
+                <!-- LISTA DE PRODUTOS -->
+                <div class="grade-produtos" id="gradeProdutos">
+
+                    <!-- MOTOROLA -->
+                    <article class="produto"
+                        data-marca="motorola"
+                        data-nome="Motorola Moto g06"
+                        data-preco="776.67">
+
+                        <div class="imagem-produto">
+                            <span class="selo">Destaque</span>
+                            <!-- <div class="celular-visual motorola">M</div> -->
+                            <img src="imgs/celulares/motorola 1.png" alt="Motorola Moto g06" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Motorola</span>
+                            <h3>Smartphone Motorola Moto g06 128GB 4GB Ram Azul Marinho 6,9" Câm. 50MP + Selfie 8MP</h3>
+                            <p class="descricao">Design elegante e ótimo desempenho.</p>
+                            <p class="preco">R$ 776,67</p>
+                            <p class="parcelas">ou 10x de R$ 77,67</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+                    <!-- APPLE -->
+                    <article class="produto"
+                        data-marca="apple"
+                        data-nome="Apple iPhone 15"
+                        data-preco="4443">
+
+                        <div class="imagem-produto">
+                            <span class="selo">Destaque</span>
+                            <!-- <div class="celular-visual apple">●</div> -->
+                            <img src="imgs/celulares/apple 1.png" alt="Apple iPhone 15" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Apple</span>
+                            <h3>Apple iPhone 15 128GB Rosa 6,1" 48MP iOS 5G</h3>
+                            <p class="descricao">Tecnologia e câmeras de alta qualidade.</p>
+                            <p class="preco">R$ 4.443,00</p>
+                            <p class="parcelas">ou 10x de R$ 444,30</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+                    
+                <!-- HUAWEI -->
+                    <article class="produto"
+                        data-marca="huawei"
+                        data-nome="Huawei Nova 15 Max"
+                        data-preco="1776">
+
+                        <div class="imagem-produto">
+                            <span class="selo">Destaque</span>
+                            <img src="imgs/celulares/HUAWEI 1.png" alt="Huawei Nova 15 Max" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Huawei</span>
+                            <h3>Smartphone HUAWEI Nova 15 Max 8GB+256GB Super Bateria de 8.500 mAh</h3>
+                            <p class="descricao">Visual moderno e recursos inteligentes.</p>
+                            <p class="preco">R$ 1.776,00</p>
+                            <p class="parcelas">ou 10x de R$ 177,60</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+
+
+                    <!-- XIAOMI -->
+                    <article class="produto"
+                        data-marca="xiaomi"
+                        data-nome="Xiaomi 15T"
+                        data-preco="3859">
+
+                        <div class="imagem-produto">
+                            <span class="selo oferta">Oferta</span>
+                            <!-- <div class="celular-visual xiaomi">mi</div> -->
+                            <img src="imgs/celulares/Xiaomi 1.png" alt="Xiaomi 15T" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Xiaomi</span>
+                            <h3>Smartphone Xiaomi 15t 5g 12+12gb Ram + 512gb, Cinza</h3>
+                            <p class="descricao">Praticidade e ótimo custo-benefício.</p>
+                            <p class="preco">R$ 3.859,00</p>
+                            <p class="parcelas">ou 10x de R$ 385,90</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+                                    <!-- APPLE -->
+                    <article class="produto"
+                        data-marca="apple"
+                        data-nome="Apple iPhone 18 Pro"
+                        data-preco="10799">
+
+                        <div class="imagem-produto">
+                            <!-- <div class="celular-visual apple">●</div> -->
+                            <img src="imgs/celulares/apple 2.png" alt="Apple iPhone 18 Pro" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Apple</span>
+                            <h3>iPhone 18 Pro 256GB</h3>
+                            <p class="descricao">Tecnologia e câmeras de alta qualidade.</p>
+                            <p class="preco">R$ 10.799,00</p>
+                            <p class="parcelas">ou 10x de R$ 1.079,90</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- SAMSUNG -->
+                    <article class="produto"
+                        data-marca="samsung"
+                        data-nome="Samsung Galaxy S24 Ultra"
+                        data-preco="5998.89">
+
+                        <div class="imagem-produto">
+                            <!-- <div class="celular-visual samsung">S</div> -->
+                            <img src="imgs/celulares/samsung 1.png" alt="Samsung Galaxy S24 Ultra" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Samsung</span>
+                            <h3>Smartphone Samsung Galaxy S24 Ultra 6,8" Galaxy AI 256GB Titânio Cinza 5G 12GB RAM Câm. Quádrupla 200MP + Selfie 12MP Bateria 5000mAh Dual Chip</h3>
+                            <p class="descricao">Tela de qualidade e ótimo desempenho.</p>
+                            <p class="preco">R$ 5.998,89</p>
+                            <p class="parcelas">ou 10x de R$ 599,89</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+                    <!-- XIAOMI -->
+                    <article class="produto"
+                        data-marca="xiaomi"
+                        data-nome="Xiaomi 15T Ouro Rosa"
+                        data-preco="4549">
+
+                        <div class="imagem-produto">
+                            <span class="selo oferta">Oferta</span>
+                            <!-- <div class="celular-visual xiaomi">mi</div> -->
+                            <img src="imgs/celulares/Xiaomi 2.png" alt="Xiaomi 15T Ouro Rosa" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Xiaomi</span>
+                            <h3>Xiaomi 15t 5g 512 Gb 5g Dual Sim 12 Gb Ram 50mpx 4k ouro rosa dourado</h3>
+                            <p class="descricao">Praticidade e ótimo custo-benefício.</p>
+                            <p class="preco">R$ 4.549,00</p>
+                            <p class="parcelas">ou 10x de R$ 454,90</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+ 
+                    <!-- HUAWEI -->
+                    <article class="produto"
+                        data-marca="huawei"
+                        data-nome="Huawei Mate XT"
+                        data-preco="32999">
+
+                        <div class="imagem-produto">
+                            <!-- <div class="celular-visual huawei">H</div> -->
+                            <img src="imgs/celulares/HUAWEI 2.png" alt="Huawei Mate XT" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Huawei</span>
+                            <h3>Smartphone Huawei Ultimate Design Mate XT 1TB 16GB RAM Vermelho 6,4" Câm Tripla + Selfie 8MP</h3>
+                            <p class="descricao">Visual moderno e recursos inteligentes.</p>
+                            <p class="preco">R$ 32.999,00</p>
+                            <p class="parcelas">ou 10x de R$ 3.299,90</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- SAMSUNG -->
+                    <article class="produto"
+                        data-marca="samsung"
+                        data-nome="Samsung Galaxy S25"
+                        data-preco="4332.22">
+
+                        <div class="imagem-produto">
+                            <!-- <div class="celular-visual samsung">S</div> -->
+                            <img src="imgs/celulares/samsung 2.png" alt="Samsung Galaxy S25" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Samsung</span>
+                            <h3>Samsung Galaxy S25 5G, 256GB, 12GB, Câmera Tripla</h3>
+                            <p class="descricao">Tela de qualidade e ótimo desempenho.</p>
+                            <p class="preco">R$ 4.332,22</p>
+                            <p class="parcelas">ou 10x de R$ 433,22</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- OUTRO MOTOROLA -->
+                    <article class="produto"
+                        data-marca="motorola"
+                        data-nome="Motorola Moto g86"
+                        data-preco="2299">
+
+                        <div class="imagem-produto">
+                            <!-- <div class="celular-visual motorola">M</div> -->
+                            <img src="imgs/celulares/motorola 2.png" alt="Motorola Moto g86" loading="lazy">
+                        </div>
+
+                        <div class="informacoes">
+                            <span class="marca">Motorola</span>
+                            <h3>Smartphone Motorola Moto g86 512GB 5G 12GB+12GB RAM Boost Inteligente Lilás 6,7" Câm. Dupla + Selfie 32MP</h3>
+                            <p class="descricao">Um smartphone para o dia a dia.</p>
+                            <p class="preco">R$ 2.299,00</p>
+                            <p class="parcelas">ou 10x de R$ 229,90</p>
+                            <button class="btn-comprar" type="button">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p id="semResultados" hidden>
+                    Nenhum celular encontrado. Tente outra marca ou pesquisa.
+                </p>
+
+            </section>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer class="rodape">
+            <a href="home.html" class="logo">
+                Tech<span>Store</span>
+            </a>
+            <p>© 2026 TechStore. Todos os direitos reservados.</p>
+        </footer>
+
+        <!-- FUNCIONALIDADES -->
+        <script src="carrinho.js"></script>
+        <script>
+            const abas = document.querySelectorAll(".aba");
+            const produtos = [...document.querySelectorAll(".produto")];
+            const busca = document.querySelector("#busca");
+            const formBusca = document.querySelector("#formBusca");
+            const ordenacao = document.querySelector("#ordenacao");
+            const quantidade = document.querySelector("#quantidade");
+            const semResultados = document.querySelector("#semResultados");
+            const grade = document.querySelector("#gradeProdutos");
+
+            let marcaSelecionada = "todas";
+
+            function atualizarProdutos() {
+                const termo = busca.value.trim().toLocaleLowerCase("pt-BR");
+
+                let encontrados = produtos.filter(produto => {
+                    const marca = produto.dataset.marca;
+                    const nome = produto.dataset.nome.toLocaleLowerCase("pt-BR");
+                    const texto = (produto.dataset.marca + " " + produto.querySelector("h3").textContent + " " + produto.querySelector(".descricao").textContent).toLocaleLowerCase("pt-BR");
+
+                    const combinaMarca =
+                        marcaSelecionada === "todas" ||
+                        marca === marcaSelecionada;
+
+                    const combinaBusca =
+                        nome.includes(termo) ||
+                        texto.includes(termo);
+
+                    return combinaMarca && combinaBusca;
+                });
+
+                if (ordenacao.value === "menor") {
+                    encontrados.sort((a, b) =>
+                        Number(a.dataset.preco) - Number(b.dataset.preco)
+                    );
+                } else if (ordenacao.value === "maior") {
+                    encontrados.sort((a, b) =>
+                        Number(b.dataset.preco) - Number(a.dataset.preco)
+                    );
+                } else if (ordenacao.value === "nome") {
+                    encontrados.sort((a, b) =>
+                        a.dataset.nome.localeCompare(b.dataset.nome, "pt-BR")
+                    );
+                }
+
+                produtos.forEach(produto => produto.hidden = true);
+
+                encontrados.forEach(produto => {
+                    produto.hidden = false;
+                    grade.appendChild(produto);
+                });
+
+                quantidade.textContent =
+                    encontrados.length +
+                    (encontrados.length === 1
+                        ? " celular encontrado"
+                        : " celulares encontrados");
+
+                semResultados.hidden = encontrados.length !== 0;
+            }
+
+            abas.forEach(aba => {
+                aba.addEventListener("click", () => {
+                    marcaSelecionada = aba.dataset.marca;
+
+                    abas.forEach(item => item.classList.remove("ativa"));
+                    aba.classList.add("ativa");
+
+                    atualizarProdutos();
+                });
+            });
+
+            formBusca.addEventListener("submit", evento => {
+                evento.preventDefault();
+                atualizarProdutos();
+            });
+
+            busca.addEventListener("input", atualizarProdutos);
+            ordenacao.addEventListener("change", atualizarProdutos);
+
+            // Busca vinda de outras páginas (celulares.html?busca=termo)
+            const buscaInicial = new URLSearchParams(window.location.search).get("busca");
+            if (buscaInicial) busca.value = buscaInicial;
+
+            atualizarProdutos();
+        </script>
+
+    </body>
+    </html>
